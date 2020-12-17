@@ -1,7 +1,7 @@
 package com.ering.services;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import com.ering.log.IEringLogger;
 
 import java.util.Collection;
 import java.util.LinkedList;
@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class IdWorkerServiceTwitter implements IdWorkerService
 {
-
+	private static IEringLogger logger;
 //	private final Logger logger = LoggerFactory.getLogger(getClass());
 
 	private long workerId;
